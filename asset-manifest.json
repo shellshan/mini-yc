@@ -1,15 +1,15 @@
 {
-  "main.css": "/shellshan/mini-yc/static/css/main.8b191734.chunk.css",
-  "main.js": "/shellshan/mini-yc/static/js/main.ef95295d.chunk.js",
-  "main.js.map": "/shellshan/mini-yc/static/js/main.ef95295d.chunk.js.map",
-  "runtime~main.js": "/shellshan/mini-yc/static/js/runtime~main.bda3701f.js",
-  "runtime~main.js.map": "/shellshan/mini-yc/static/js/runtime~main.bda3701f.js.map",
-  "static/css/2.0cb132b7.chunk.css": "/shellshan/mini-yc/static/css/2.0cb132b7.chunk.css",
-  "static/js/2.f439ef5e.chunk.js": "/shellshan/mini-yc/static/js/2.f439ef5e.chunk.js",
-  "static/js/2.f439ef5e.chunk.js.map": "/shellshan/mini-yc/static/js/2.f439ef5e.chunk.js.map",
-  "index.html": "/shellshan/mini-yc/index.html",
-  "precache-manifest.fa3a21160ab1bc3ebfc6ee5762ffd408.js": "/shellshan/mini-yc/precache-manifest.fa3a21160ab1bc3ebfc6ee5762ffd408.js",
-  "service-worker.js": "/shellshan/mini-yc/service-worker.js",
-  "static/css/2.0cb132b7.chunk.css.map": "/shellshan/mini-yc/static/css/2.0cb132b7.chunk.css.map",
-  "static/css/main.8b191734.chunk.css.map": "/shellshan/mini-yc/static/css/main.8b191734.chunk.css.map"
+  "main.css": "/mini-yc/static/css/main.8b191734.chunk.css",
+  "main.js": "/mini-yc/static/js/main.ef95295d.chunk.js",
+  "main.js.map": "/mini-yc/static/js/main.ef95295d.chunk.js.map",
+  "runtime~main.js": "/mini-yc/static/js/runtime~main.708e4382.js",
+  "runtime~main.js.map": "/mini-yc/static/js/runtime~main.708e4382.js.map",
+  "static/css/2.0cb132b7.chunk.css": "/mini-yc/static/css/2.0cb132b7.chunk.css",
+  "static/js/2.c5d36969.chunk.js": "/mini-yc/static/js/2.c5d36969.chunk.js",
+  "static/js/2.c5d36969.chunk.js.map": "/mini-yc/static/js/2.c5d36969.chunk.js.map",
+  "index.html": "/mini-yc/index.html",
+  "precache-manifest.04e6053bf8cf5fe47e8ec736150a5121.js": "/mini-yc/precache-manifest.04e6053bf8cf5fe47e8ec736150a5121.js",
+  "service-worker.js": "/mini-yc/service-worker.js",
+  "static/css/2.0cb132b7.chunk.css.map": "/mini-yc/static/css/2.0cb132b7.chunk.css.map",
+  "static/css/main.8b191734.chunk.css.map": "/mini-yc/static/css/main.8b191734.chunk.css.map"
 }

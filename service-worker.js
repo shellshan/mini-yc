@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/shellshan/mini-yc/precache-manifest.fa3a21160ab1bc3ebfc6ee5762ffd408.js"
+  "/mini-yc/precache-manifest.04e6053bf8cf5fe47e8ec736150a5121.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/shellshan/mini-yc/index.html", {
+workbox.routing.registerNavigationRoute("/mini-yc/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
