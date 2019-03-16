@@ -1,15 +1,15 @@
 {
-  "main.css": "/mini-yc/static/css/main.8b191734.chunk.css",
-  "main.js": "/mini-yc/static/js/main.ef95295d.chunk.js",
-  "main.js.map": "/mini-yc/static/js/main.ef95295d.chunk.js.map",
+  "main.css": "/mini-yc/static/css/main.d7d3f0a3.chunk.css",
+  "main.js": "/mini-yc/static/js/main.667e2844.chunk.js",
+  "main.js.map": "/mini-yc/static/js/main.667e2844.chunk.js.map",
   "runtime~main.js": "/mini-yc/static/js/runtime~main.708e4382.js",
   "runtime~main.js.map": "/mini-yc/static/js/runtime~main.708e4382.js.map",
-  "static/css/2.0cb132b7.chunk.css": "/mini-yc/static/css/2.0cb132b7.chunk.css",
-  "static/js/2.c5d36969.chunk.js": "/mini-yc/static/js/2.c5d36969.chunk.js",
-  "static/js/2.c5d36969.chunk.js.map": "/mini-yc/static/js/2.c5d36969.chunk.js.map",
+  "static/css/2.0ffb189a.chunk.css": "/mini-yc/static/css/2.0ffb189a.chunk.css",
+  "static/js/2.269c976a.chunk.js": "/mini-yc/static/js/2.269c976a.chunk.js",
+  "static/js/2.269c976a.chunk.js.map": "/mini-yc/static/js/2.269c976a.chunk.js.map",
   "index.html": "/mini-yc/index.html",
-  "precache-manifest.04e6053bf8cf5fe47e8ec736150a5121.js": "/mini-yc/precache-manifest.04e6053bf8cf5fe47e8ec736150a5121.js",
+  "precache-manifest.42ad9e42c0ec9ce65276f791d3b05ac6.js": "/mini-yc/precache-manifest.42ad9e42c0ec9ce65276f791d3b05ac6.js",
   "service-worker.js": "/mini-yc/service-worker.js",
-  "static/css/2.0cb132b7.chunk.css.map": "/mini-yc/static/css/2.0cb132b7.chunk.css.map",
-  "static/css/main.8b191734.chunk.css.map": "/mini-yc/static/css/main.8b191734.chunk.css.map"
+  "static/css/2.0ffb189a.chunk.css.map": "/mini-yc/static/css/2.0ffb189a.chunk.css.map",
+  "static/css/main.d7d3f0a3.chunk.css.map": "/mini-yc/static/css/main.d7d3f0a3.chunk.css.map"
 }
