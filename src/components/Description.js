@@ -1,41 +1,60 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import { Row, Col } from 'antd';
 import * as utils from '../utils.js'
+
+const API = 'https://hacker-news.firebaseio.com/v0/item/';
 
 class Description extends Component {
         constructor() {
                 super();
                 this.state = {
-                        'info' : {}
+                        info: {},
+                        isLoading: false,
+                        error: null
                 };
         }
         getData(id){
-                var url = 'https://hacker-news.firebaseio.com/v0/item/'+id+'.json'
-                fetch(url)
-                .then(result => result.json())
-                .then(info=> this.setState({info}));
+                this.setState({ isLoading: true});
+                axios.get(API + id + '.json')
+                        .then(result => this.setState({
+                                info: result.data,
+                                isLoading: false,
+                                error: null
+                        }))
+                        .catch(error => this.setState({
+                                error,
+                                isLoading: false
+                        }));
         }
         componentDidMount() {
                 this.getData(this.props.id);
         }
         render(){
-                if (this.state.info.hasOwnProperty('title')) {
-                        const tduration = utils.timeCal(this.state.info.time);
-                        const domain= this.state.info.url ? this.state.info.url.split('/')[2] : '';
-                        return(
-                                <Row> <Col span={24} offset={4}>
-                                <a className="storylink" href={this.state.info.url}> {this.props.ind+1+'.'} {this.state.info.title} </a>
-                                <span className='subtext'> ({domain})</span>
-                                <div className='subtext'>
-                                <p>{this.state.info.hasOwnProperty('score')? this.state.info.score+' points by '+this.state.info.by+' ' : ''}
-                                 {'| '+tduration+ ' ago'}
-                                 {this.state.info.hasOwnProperty('kids')? ' | '+this.state.info.kids.length+' comments': ''} </p>
-                                </div>
-                                </Col></Row>
-                        );
-                } else {
+                const { info, isLoading, error } = this.state;
+
+                if (error) {
+                        return(<Row> <Col span={24} offset={8}>{error.message}</Col></Row>)
+                }
+
+                if (isLoading) {
                         return(<Row> <Col span={24} offset={8}> ... </Col></Row>)
                 }
+
+                const tduration = utils.timeCal(info.time);
+                const domain= info.url ? info.url.split('/')[2] : '';
+
+                return(
+                        <Row> <Col span={24} offset={4}>
+                        <a className="storylink" href={info.url}> {this.props.ind+1+'.'} {info.title} </a>
+                        <span className='subtext'> ({domain})</span>
+                        <div className='subtext'>
+                        <p>{info.hasOwnProperty('score')? info.score+' points by '+info.by+' ' : ''}
+                         {'| '+tduration+ ' ago'}
+                         {info.hasOwnProperty('kids')? ' | '+info.kids.length+' comments': ''} </p>
+                        </div>
+                        </Col></Row>
+                );
         }
 }
 
